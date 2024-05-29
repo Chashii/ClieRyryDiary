@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClieRyryDiary</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div id="preloader">
+      <div class="spinner">
+          <div class="spinner-border"></div>
+          <img src="clieloading.png" alt="Loading Image">
+      </div>
+  </div>
+  <div id="content" style="display:none;">
+      <div class="sticky">
+          CLIE AND RYRY DIARY
+      </div>
+
+      <div class = "textbox">
+        <div class = "text-boxcon">
+            <h1>WELCOME TO OUR DIARY</h1>
+            <h2>This serves as a collection of everything for us. Many things are here from photos to videos and a timeline as well. We put everything here like our own gallery museum of everything.<br><br>(note: some may have bugs because of github please don't judge ; - ;)</h2>
+        </div>
+    </div>
+      <div class="full-screen-container">
+          <div class="container">
+              <a href="photos.html" class="box">PHOTOS</a>
+              <a href="timelines.html" class="box">TIMELINE</a>
+              <a href="highlights.html" class="box">HIGHLIGHTS</a>
+              <a href="letter.html" class="box">LETTER</a>
+          </div>
+      </div>
+      <div class = "textbox">
+        <div class = "text-boxcon">
+            <h3>Update on the app</h3>
+            <h4>Our app is on works and i will update you when i need ur design i love you mwamwa</h4>
+        </div>
+    </div>
+  </div>
+	<script>
+    window.onload = function() {
+    setTimeout(function() {
+        document.getElementById('preloader').classList.add('loaded');
+        setTimeout(function() {
+            document.getElementById('preloader').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        }, 500);
+    }, 2000);
+};
+  </script>
+  </body>
+</html>

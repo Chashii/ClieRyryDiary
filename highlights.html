@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="highlightstyle.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner">
+            <div class="spinner-border"></div>
+            <img src="clieloading.png" alt="Loading Image">
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div id="content" style="display:none;">
+        <div class="sticky">
+            CLIE AND RYRY DIARY
+        </div>
+        <!-- Your main content goes here -->
+        <div class = "textbox">
+            <div class = "text-container">
+                <h1>WELCOME TO HIGHLIGHTS</h1>
+                <h2>You can watch our videos here. <br>Fun memories, sick gameplay and us being silly. Make sure to watch it with a smile.</h2>
+            </div>
+        </div>
+        <div class="video-container">
+            <div class="video-item">
+                <video controls>
+                    <source src="highlights/highlight1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Video Title 1</div>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="highlights/highlight2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Video Title 2</div>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="highlights/highlight3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Video Title 3</div>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="highlights/highlight4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Video Title 3</div>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="highlights/highlight5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Video Title 3</div>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="highlights/highlight6.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Video Title 3</div>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="highlights/highlight8.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Video Title 3</div>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="highlights/highlight9.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Video Title 3</div>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="highlights/highlight10.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Video Title 3</div>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="highlights/highlight11.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Video Title 3</div>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="highlights/highlight12.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Video Title 3</div>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="highlights/highlight13.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Video Title 3</div>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="highlights/highlight14.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Video Title 3</div>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="highlights/highlight15.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Video Title 3</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to hide preloader and show content after window loads
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById('preloader').classList.add('loaded');
+                setTimeout(function() {
+                    document.getElementById('preloader').style.display = 'none';
+                    document.getElementById('content').style.display = 'block';
+                }, 1000); // Match this timing with the fade-out animation duration
+            }, 3000); // Duration before starting the fade-out animation (3 seconds)
+        };
+    </script>
+</body>
+</html>

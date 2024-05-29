@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'seasons';
+    src: url(Fontspring-DEMO-theseasons-ltit.otf);
+}
+@font-face {
+    font-family: 'seasonsreg';
+    src: url(Fontspring-DEMO-theseasons-reg.otf);
+}
+@font-face {
+    font-family: 'seasonslt';
+    src: url(Fontspring-DEMO-theseasons-bdit.otf);
+}
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #C77398;
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 40px;
+    font-family: 'seasonslt';
+}
+body {
+    background-image: url('bg4.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #C77398;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 1s ease-out;
+}
+
+.spinner {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.spinner-border {
+    width: 100px;
+    height: 100px;
+    border: 10px solid rgba(255, 255, 255, 0.3);
+    border-top: 10px solid #ffffff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    position: absolute;
+}
+
+.spinner img {
+    width: 60px;
+    height: 60px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#content {
+    display: none;
+}
+
+#preloader.loaded {
+    opacity: 0;
+}
+.photo-collection-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.photo-collection {
+    background-color: rgba(199, 115, 152, 0.8);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+.photo-collection img {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+.photo-collection img:hover {
+    transform: scale(1.05);
+}
+.textbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-family: 'seasonsreg';
+}
+.text-container {
+    width: 500px;
+    padding: 25px;
+    border-radius: 5px;
+    background-color: rgba(199, 115, 152, 0.8);
+    text-align: center;
+}
+.textbox2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    font-family: 'seasonsreg';
+}
+.text-container2 {
+    width: 300px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(247, 247, 247, 0.8);
+    text-align: center;
+    font-size: small;
+}

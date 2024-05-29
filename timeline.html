@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="timelinestyle.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner">
+            <div class="spinner-border"></div>
+            <img src="clieloading.png" alt="Loading Image">
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div id="content" style="display:none;">
+        <div class="sticky">
+            CLIE AND RYRY DIARY
+        </div>
+        <!-- Your main content goes here -->
+        <div class = "textbox">
+            <div class = "text-container">
+                <h1>WELCOME TO TIMELINE</h1>
+                <h2>This is a memory lane for everything that happened on our lives together. <br>We going to make more memories together small or big we going to put it here.</h2>
+            </div>
+        </div>
+        <div class = "textbox2">
+            <div class = "text-container2">
+                <h1>May 20, 2023</h1>
+                <h2>Our very first interaction on discord</h2>
+            </div>
+        </div>
+        <div class="photo-collection-container">
+            <div class="photo-collection">
+                <img src="timelines/timeline1.png" alt="timeline Image 1">
+                <img src="timelines/timeline2.jpeg" alt="timeline Image 2">
+                <img src="timelines/timeline3.jpeg" alt="timeline Image 3">
+            </div>
+        </div>
+        <div class = "textbox2">
+            <div class = "text-container2">
+                <h1>May 22, 2023</h1>
+                <h2>Our very first call on discord</h2>
+            </div>
+        </div>
+        <div class="photo-collection-container">
+            <div class="photo-collection">
+                <img src="timelines/timeline4.jpeg" alt="timeline Image 4">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById('preloader').classList.add('loaded');
+                setTimeout(function() {
+                    document.getElementById('preloader').style.display = 'none';
+                    document.getElementById('content').style.display = 'block';
+                }, 1000);
+            }, 3000);
+        };
+    </script>
+</body>
+</html>

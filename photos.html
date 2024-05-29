@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="photostyle.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner">
+            <div class="spinner-border"></div>
+            <img src="clieloading.png" alt="Loading Image">
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div id="content" style="display:none;">
+
+        <div class="sticky">
+            CLIE AND RYRY DIARY
+        </div>
+        <!-- Your main content goes here -->
+        <div class = "textbox">
+            <div class = "text-container">
+                <h1>WELCOME TO PHOTOS</h1>
+                <h2>This is a collection of photos of us. <br>Let's take more pictures of us and put them here, <br>like in a gallery with extra steps or in a museum with our pictures on it.</h2>
+            </div>
+        </div>
+        <div class="photo-collection-container">
+            <div class="photo-collection">
+                <img src="photos/photo1.jpg" alt="Sample Image 1">
+                <img src="photos/photo2.jpg" alt="Sample Image 2">
+                <img src="photos/photo3.jpg" alt="Sample Image 3">
+                <img src="photos/photo4.jpg" alt="Sample Image 4">
+                <img src="photos/photo5.jpg" alt="Sample Image 5">
+                <img src="photos/photo6.jpg" alt="Sample Image 6">
+                <img src="photos/photo7.jpg" alt="Sample Image 7">
+                <img src="photos/photo8.jpg" alt="Sample Image 8">
+                <img src="photos/photo9.jpg" alt="Sample Image 9">
+                <img src="photos/photo10.jpg" alt="Sample Image 10">
+                <img src="photos/photo11.jpg" alt="Sample Image 11">
+                <img src="photos/photo12.jpg" alt="Sample Image 12">
+                <img src="photos/photo13.jpg" alt="Sample Image 13">
+                <img src="photos/photo14.jpg" alt="Sample Image 14">
+                <img src="photos/photo15.jpg" alt="Sample Image 15">
+                <img src="photos/photo16.jpg" alt="Sample Image 16">
+                <img src="photos/photo17.jpg" alt="Sample Image 17">
+                <img src="photos/photo18.jpg" alt="Sample Image 18">
+                <img src="photos/photo19.jpg" alt="Sample Image 19">
+                <img src="photos/photo20.jpg" alt="Sample Image 20">
+                <img src="photos/photo21.jpg" alt="Sample Image 21">
+                <img src="photos/photo22.jpg" alt="Sample Image 22">
+                <img src="photos/photo23.jpg" alt="Sample Image 23">
+                <img src="photos/photo24.jpg" alt="Sample Image 24">
+                <img src="photos/photo25.jpg" alt="Sample Image 25">
+                <img src="photos/photo26.jpg" alt="Sample Image 26">
+                <img src="photos/photo27.jpg" alt="Sample Image 27">
+                <img src="photos/photo28.jpg" alt="Sample Image 28">
+                <img src="photos/photo29.jpg" alt="Sample Image 29">
+                <img src="photos/photo30.jpg" alt="Sample Image 30">
+                <img src="photos/photo31.jpg" alt="Sample Image 31">
+                <img src="photos/photo32.jpg" alt="Sample Image 32">
+                <img src="photos/photo33.jpg" alt="Sample Image 33">
+                <img src="photos/photo34.jpg" alt="Sample Image 34">
+                <img src="photos/photo35.jpg" alt="Sample Image 35">
+                <img src="photos/photo36.jpg" alt="Sample Image 36">
+                <img src="photos/photo37.jpg" alt="Sample Image 37">
+                <img src="photos/photo38.jpg" alt="Sample Image 38">
+                <img src="photos/photo39.jpg" alt="Sample Image 39">
+                <img src="photos/photo40.jpg" alt="Sample Image 40">
+                <img src="photos/photo41.jpg" alt="Sample Image 41">
+                <img src="photos/photo42.jpg" alt="Sample Image 42">
+                <img src="photos/photo43.jpg" alt="Sample Image 43">
+                <img src="photos/photo44.jpg" alt="Sample Image 44">
+                <img src="photos/photo45.jpg" alt="Sample Image 45">
+                <img src="photos/photo46.jpg" alt="Sample Image 46">
+                <img src="photos/photo47.jpg" alt="Sample Image 47">
+                <img src="photos/photo48.jpg" alt="Sample Image 48">
+                <img src="photos/photo49.jpg" alt="Sample Image 49">
+                <img src="photos/photo50.jpg" alt="Sample Image 50">
+                <img src="photos/photo51.jpg" alt="Sample Image 51">
+                <img src="photos/photo52.jpg" alt="Sample Image 52">
+                <img src="photos/photo53.jpg" alt="Sample Image 53">
+                <img src="photos/photo54.jpg" alt="Sample Image 54">
+                <img src="photos/photo55.jpg" alt="Sample Image 55">
+                <img src="photos/photo56.jpg" alt="Sample Image 56">
+                <img src="photos/photo57.jpg" alt="Sample Image 57">
+                <img src="photos/photo58.jpg" alt="Sample Image 58">
+                <img src="photos/photo59.jpg" alt="Sample Image 59">
+                <img src="photos/photo60.jpg" alt="Sample Image 60">
+                <img src="photos/photo61.jpg" alt="Sample Image 61">
+                <img src="photos/photo62.jpg" alt="Sample Image 62">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to hide preloader and show content after window loads
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById('preloader').classList.add('loaded');
+                setTimeout(function() {
+                    document.getElementById('preloader').style.display = 'none';
+                    document.getElementById('content').style.display = 'block';
+                }, 1000); // Match this timing with the fade-out animation duration
+            }, 3000); // Duration before starting the fade-out animation (3 seconds)
+        };
+    </script>
+</body>
+</html>
